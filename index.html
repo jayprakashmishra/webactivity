@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<body>
+<table style="width: 100%; align:center;">
+<tr>
+    <td colspan="4">Question: Look at the picture carefully, click on the button and find where is Monitor?</td>
+  </tr>
+ <tr><td>
+ <a onclick="document.getElementById('myAudio1').play();">
+<img id="myImage" src="monitor.jpg" style="width:100px">
+</br></br>
+<input type="button" id="button" value = "                     " onclick="setColor('button')";/>
+</a></br>
+<audio id="myAudio1" display="hide">
+	<source src="monitor.mp3" type="audio/mp3">
+</audio>
+
+</td>
+ <td>
+<a onclick="document.getElementById('myAudio2').play();">
+<img id="myImage" src="keyboard.jpg" style="width:100px">
+</br>
+<input type="button" onclick="wrong()" value="                     " id="btn1" />  
+</a>
+<audio id="myAudio2" display="hide">
+	<source src="keyboard.mp3" type="audio/mp3">
+</audio>
+ </td>
+ <td>
+<a onclick="document.getElementById('myAudio3').play();">
+<img id="myImage" src="mouse.jpg" style="width:100px">
+</br>
+<input type="button" onclick="wrong1()" value="                     " id="btn2" />  
+
+</a>
+<audio id="myAudio3" display="hide">
+	<source src="mouse.mp3" type="audio/mp3">
+</audio>
+</td>
+<td>
+<a onclick="document.getElementById('myAudio4').play();">
+<img id="myImage" src="cpu.jpg" style="width:100px">
+</br>
+<input type="button" onclick="cpu()" value="                     " id="btn3" />  
+</a>
+<audio id="myAudio4" display="hide">
+	<source src="cpu.mp3" type="audio/mp3">
+</audio>
+</td>
+ </tr>
+</table>
+
+<script>
+function setColor(btn){
+    var property = document.getElementById(btn);
+     property.style.backgroundColor = "#7FFF00"      
+    }
+function wrong()   
+     {  
+      document.getElementById('btn1').style.backgroundColor = 'Red';  
+        
+     }
+function wrong1()   
+     {  
+      document.getElementById('btn2').style.backgroundColor = 'Red';  
+        
+     }
+function cpu()   
+     {  
+      document.getElementById('btn3').style.backgroundColor = 'Red';  
+        
+     } 	 
+
+</script>
+
+</body>
+</html>
